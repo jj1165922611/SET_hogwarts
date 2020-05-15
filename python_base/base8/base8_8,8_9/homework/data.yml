@@ -1,0 +1,16 @@
+zhaowenzhuo:
+  hp: 1000
+  power: 50
+  skill: 3
+herundong:
+  hp: 800
+  power: 60
+  skill: 4
+liliqun:
+  hp: 900
+  power: 50
+  skill: 3.5
+fengshaofeng:
+  hp: 1100
+  power: 45
+  skill: 2
