@@ -6,7 +6,7 @@
 # @Software   : Visual Studio Code
 # @Description: 计算器
 import pytest
-from python_base.base9.base9_7.calc import Calc
+from calc import Calc
 class TestCalc:
     def test_add_(self):
         calc=Calc()

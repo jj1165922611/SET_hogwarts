@@ -7,7 +7,7 @@
 # @Description: python unittest测试框架
 
 import unittest
-from python_base.base9.base9_2.test_base9_2_2 import Demo1Test, Demo2Test
+from test_base9_2_2 import Demo1Test, Demo2Test
 if __name__ == "__main__":
     suite1 = unittest.TestLoader().loadTestsFromTestCase(Demo1Test)
     suite2 = unittest.TestLoader().loadTestsFromTestCase(Demo2Test)
