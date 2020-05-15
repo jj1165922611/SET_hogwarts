@@ -1,0 +1,13 @@
+# 1.int和float类型的数字
+# 2.布尔值用true和false表示
+# 3.None用~表示
+# 4.日期采用复合 iso8601 格式的年、月、日表示
+# 5.使用两个感叹号，强制转换数据类型
+int: 1
+float: 12.30
+bool1: true
+bool2: false
+none: ~
+time: 2020-05-10
+n1: !!str 123
+n2: !!str true

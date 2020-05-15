@@ -12,7 +12,7 @@ from openpyxl import load_workbook
 
 class SeleniumPython:
     def __init__(self):
-        self.wb=load_workbook("./selenium.xlsx")
+        self.wb=load_workbook("selenium.xlsx")
         self.sheet=self.wb["Sheet1"]
     def go_to_baidu(self):
         driver=webdriver.Chrome()

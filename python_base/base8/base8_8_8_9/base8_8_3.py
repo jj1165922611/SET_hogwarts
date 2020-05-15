@@ -6,4 +6,4 @@
 # @SOftware   : Visual Studio Code
 # @Description: python外部源文件处理（二）
 import yaml
-print(yaml.safe_load(open("./data.yml",'rb')))
+print(yaml.safe_load(open("data.yml",'rb')))
