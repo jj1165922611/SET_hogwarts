@@ -13,14 +13,15 @@ def login_1(request):
     user=request.param
     print(f"登录用户：{user}")
     return user
-@pytest.mark.skip("login_1",test_user_data,indirect=True)
+@pytest.mark.skip
+@pytest.mark.parametrize("login_1",test_user_data,indirect=True)
 def test_login_1(login_1):
     a=login_1
     print(f"测试用例中login_1的返回值{a}")
     assert a !=""
-@pytest.mark.skipif(sys.platform=="darwin",reason="不在windows系统上执行")
+@pytest.mark.skipif(sys.platform=="win32",reason="不在windows系统上执行")
 def test_login_2():
     print("test_login_2")
 
 if __name__ == "__main__":
-    pytest.main(['-v','-s','python_base/base9/base9_3/test_base9_3_14.py'])
+    pytest.main(['-v','-s','test_base9_3_14.py'])

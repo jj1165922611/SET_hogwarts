@@ -36,4 +36,4 @@ def setup_module():
 def teardown_module():
     print("这是一个teardown_module函数")
 if __name__ == "__main__":
-    pytest.main(['-v','-s','python_base/base9/base9_3/test_base9_3_4.py'])
+    pytest.main(['-v','-s','test_base9_3_4.py'])

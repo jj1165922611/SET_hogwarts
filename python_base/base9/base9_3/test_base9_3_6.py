@@ -14,4 +14,4 @@ class TestDemo:
         print("这是一个方法two，不需要连接数据库")
 
 if __name__ == "__main__":
-    pytest.main(['-v','-s','python_base/base9/base9_3/test_base9_3_6.py'])
+    pytest.main(['-v','-s','test_base9_3_6.py'])

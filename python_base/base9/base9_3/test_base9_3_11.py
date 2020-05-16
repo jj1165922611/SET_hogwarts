@@ -12,4 +12,4 @@ def test_eval(test_input,expected):
 
 
 if __name__ == "__main__":
-    pytest.main(['-v','-s','python_base/base9/base9_3/test_base9_3_11.py'])
+    pytest.main(['-v','-s','test_base9_3_11.py'])
