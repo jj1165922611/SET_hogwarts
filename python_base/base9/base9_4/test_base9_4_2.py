@@ -9,7 +9,7 @@
 import pytest
 import yaml
 
-@pytest.mark.parametrize("a,b",yaml.safe_load(open(r"G:\python\SET_hogwarts\python_base\base9\base9_4\data.yml","rb")))
+@pytest.mark.parametrize("a,b",yaml.safe_load(open("data.yml","rb")))
 def test_string(a,b):
     print(a+b)
 @pytest.mark.parametrize(["a","b"],[(10,20),(20,30)])

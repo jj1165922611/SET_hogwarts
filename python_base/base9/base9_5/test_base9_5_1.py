@@ -9,7 +9,7 @@
 import pytest
 import yaml
 class TestDemo:
-    @pytest.mark.parametrize("env",yaml.safe_load(open("G:/python/SET_hogwarts/python_base/base9/base9_5/env.yml","rb")))
+    @pytest.mark.parametrize("env",yaml.safe_load(open("env.yml","rb")))
     def test_demo(self,env):
         print(env)
         if "test" in env:
