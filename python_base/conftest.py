@@ -10,3 +10,5 @@ def pytest_collection_modifyitems(session,config,items:list):
             i.add_marker(pytest.mark.sub)
         if "div" in i.nodeid:
             i.add_marker(pytest.mark.div)
+        if "mul" in i.nodeid:
+            i.add_marker(pytest.mark.mul)

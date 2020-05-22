@@ -16,6 +16,8 @@ class TestLogin:
         self.driver = webdriver.Chrome()
         # 2.最大化浏览器窗口
         self.driver.maximize_window()
+        # 3.打开企业微信URL
+        self.driver.get("https://work.weixin.qq.com/")
 
     def test_set_cookie(self):
         # 7.读取文件中的cookies
