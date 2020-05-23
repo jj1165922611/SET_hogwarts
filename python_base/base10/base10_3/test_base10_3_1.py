@@ -17,8 +17,6 @@ class TestTesterHome:
     def test_case(self):
         self.driver.get("https://testerhome.com/")
         self.driver.find_element_by_link_text("社团").click()
-        time.sleep(1)
         self.driver.find_element_by_link_text("霍格沃兹测试学院").click()
-        time.sleep(1)
-        self.driver.find_element_by_xpath("//div[@id='main']/div/div/div/div/div/div[2]/div/a").click()
-        time.sleep(1)
+        el = self.driver.find_element_by_xpath("//div[@id='main']/div/div/div/div/div/div[2]/div/a")
+        print(el.text)
