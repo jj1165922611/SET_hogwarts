@@ -2,7 +2,7 @@
 # -*-coding: utf-8 -*-
 # @Time       : 2020-05-24
 # @Author     : Joey Jiang
-# @File       : test_base10_6_9.py
+# @File       : test_base10_6_10.py
 # @Software   : PyCharm
 # @Description: web控件的交互进阶
 from time import sleep
