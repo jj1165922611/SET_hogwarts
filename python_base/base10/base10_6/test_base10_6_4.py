@@ -2,7 +2,7 @@
 # -*-coding: utf-8 -*-
 # @Time       : 2020-05-24
 # @Author     : Joey Jiang
-# @File       : test_base10_6_3.py
+# @File       : test_base10_6_4.py
 # @Software   : PyCharm
 # @Description: web控件的交互进阶
 from time import sleep
@@ -27,13 +27,11 @@ class TestActionChains:
         target2=self.driver.find_element(By.XPATH,'/html/body/div[3]')
         target3=self.driver.find_element(By.XPATH,'/html/body/div[4]')
         target4=self.driver.find_element(By.XPATH,'/html/body/div[5]')
-        action=ActionChains(self.driver)
-        action.drag_and_drop(element,target1)
-        sleep(2)
-        action.drag_and_drop(element,target2)
-        sleep(2)
-        action.drag_and_drop(element,target3)
-        sleep(2)
-        action.drag_and_drop(element,target4)
-        sleep(2)
-        action.perform()
+        ActionChains(self.driver).drag_and_drop(element,target1).perform()
+        # sleep(2)
+        ActionChains(self.driver).drag_and_drop(element,target2).perform()
+        # sleep(2)
+        ActionChains(self.driver).drag_and_drop(element,target3).perform()
+        # sleep(2)
+        ActionChains(self.driver).drag_and_drop(element,target4).perform()
+        # sleep(2)
