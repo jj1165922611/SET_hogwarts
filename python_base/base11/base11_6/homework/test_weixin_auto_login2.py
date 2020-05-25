@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time       : 2020-05-21
 # @Author     : Joey Jiang
-# @File       : test_weixin_auto_login1.py
+# @File       : test_weixin_auto_login2.py
 # @Software   : PyCharm
 # @Description: 企业微信的自动化登录
 
@@ -52,3 +52,5 @@ class TestLogin:
     def teardown(self):
         # 10.退出浏览器并释放资源
         self.driver.quit()
+
+    # 有问题
