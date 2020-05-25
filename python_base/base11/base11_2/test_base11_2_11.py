@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time       : 2020-05-24
 # @Author     : Joey Jiang
-# @File       : test_base11_2_10.py
+# @File       : test_base11_2_11.py
 # @Software   : PyCharm
 # @Description: 执行javaScript脚本
 from time import sleep
@@ -17,7 +17,6 @@ class TestExecuteScript:
     def test_execute_script(self):
         self.driver.get("https://www.12306.cn/index/")
         self.driver.execute_script("a=document.getElementById('train_date');a.removeAttribute('readonly')")
-        sleep(2)
-        self.driver.execute_script("document.getElementById('train_date').value='2020-12-30'")
-        sleep(2)
+        self.driver.execute_script("setTimeout(function(){document.getElementById('train_date').value='2020-12-30'},3000)")
+        sleep(10)
         print(self.driver.execute_script("return document.getElementById('train_date').value"))
