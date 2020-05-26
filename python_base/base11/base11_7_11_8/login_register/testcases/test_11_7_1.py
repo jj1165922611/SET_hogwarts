@@ -10,4 +10,6 @@ from python_base.base11.base11_7_11_8.login_register.page.index_page import Inde
 class TestRegister:
     def test_login_register(self):
         index=IndexPage()
-        index.goto_login()
+        # 进入登录页面，点击立即注册，进入注册页面，开始注册，扫码登录
+        index.goto_login().goto_register().register().scanf()
+

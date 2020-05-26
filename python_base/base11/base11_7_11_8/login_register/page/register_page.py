@@ -5,8 +5,14 @@
 # @File       : register_page.py
 # @Software   : PyCharm
 # @Description: Page Object演练
+from python_base.base11.base11_7_11_8.login_register.page.login_page import LoginPage
+
 
 class RegisterPage():
-
+    '''
+    *注册行为
+    '''
     def register(self):
-        return
+        # 输入信息
+        # 点击保存
+        return LoginPage()
