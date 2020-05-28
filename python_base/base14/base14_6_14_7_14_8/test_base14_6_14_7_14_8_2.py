@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time       : 2020-05-28
 # @Author     : Joey Jiang
-# @File       : test_14_6_14_7_14_8.py
+# @File       : test_14_6_14_7_14_8_2.py
 # @Software   : PyCharm
 # @Description: 雪球财经App测试实战1
 from time import sleep
@@ -17,6 +17,7 @@ class TestQiYeWeiXin:
         desired_caps['deviceName']='127.0.0.1:7555'
         desired_caps['appPackage']='com.tencent.wework'
         desired_caps['appActivity']='.launch.WwMainActivity'
+        desired_caps['noReset']=True
         self.driver=webdriver.Remote('http://localhost:4723/wd/hub',desired_caps)
         self.driver.implicitly_wait(30)
     def teardown(self):
