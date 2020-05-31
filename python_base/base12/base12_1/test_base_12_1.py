@@ -14,5 +14,5 @@ class TestAppium:
         desired_caps['deviceName']='127.0.0.1:7555'
         desired_caps['appPackage']='com.android.settings'
         desired_caps['appActivity']='com.android.settings.Settings'
-        self.driver=webdriver.Remote('http://localhost:4723/wd/hub',desired_caps)
+        self.driver=webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
         self.driver.quit()
