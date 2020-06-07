@@ -9,7 +9,7 @@ from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 
 
-class TestWebView:
+class TestWebViewCase1:
     def setup(self):
         des_caps={}
         des_caps['platformName']='Android'

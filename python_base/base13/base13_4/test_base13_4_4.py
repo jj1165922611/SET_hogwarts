@@ -10,7 +10,7 @@ from appium.webdriver.common.mobileby import MobileBy
 from appium.webdriver.common.touch_action import TouchAction
 
 
-class TestWebView:
+class TestWebViewCase1:
     def setup(self):
         des_caps={}
         des_caps['platformName']='Android'
@@ -29,3 +29,4 @@ class TestWebView:
             'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("Views").instance(0));').click()
         self.driver.find_element_by_android_uiautomator(
             'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("WebView").instance(0));').click()
+    # 有问题

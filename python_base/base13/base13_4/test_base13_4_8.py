@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time       : 2020-06-01
 # @Author     : Joey Jiang
-# @File       : test_base13_4_7.py
+# @File       : test_base13_4_8.py
 # @Software   : PyCharm
 # @Description: android webview测试
 from appium import webdriver
@@ -19,7 +19,7 @@ class TestWebViewCase1:
         des_caps['appActivity']='.ApiDemos'
         des_caps['noReset']=True
         des_caps['avd']='Nexus'
-        des_caps['chromedriverExecutable']='C:/Program Files/Appium/resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/win/'
+        des_caps['chromedriverExecutable']='C:/Program Files/Appium/resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/win/chromedriver2.20.exe'
         self.driver=webdriver.Remote("http://127.0.0.1:4723/wd/hub",des_caps)
         self.driver.implicitly_wait(10)
     def teardown(self):
@@ -35,5 +35,5 @@ class TestWebViewCase1:
         print(context)
         self.driver.switch_to.context(context)
         self.driver.find_element_by_id("i_am_a_textbox").send_keys("i_am_a_textboxhhhhhhhh")
+        self.driver.find_element_by_id("i am a link").click()
         print(self.driver.contexts)
-        # 有问题
