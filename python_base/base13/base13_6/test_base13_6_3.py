@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time       : 2020-06-07
 # @Author     : Joey Jiang
-# @File       : test_base13_6_2.py
+# @File       : test_base13_6_3.py
 # @Software   : PyCharm
 # @Description: 设备交互API
 from time import sleep
@@ -11,7 +11,7 @@ from appium import webdriver
 from appium.webdriver.extensions.android.gsm import GsmCallActions
 
 
-class TestNetWork:
+class TestScreenShot:
     def setup(self):
         des_caps={}
         des_caps['platformName']='Android'
@@ -28,7 +28,8 @@ class TestNetWork:
         self.driver.implicitly_wait(10)
     def teardown(self):
         self.driver.quit()
-    def test_net_work(self):
-        self.driver.set_network_connection(1)
+    def test_screen_shot(self):
+        self.driver.set_network_connection(0)
+        self.driver.get_screenshot_as_file("G:/python/SET_hogwarts/python_base/base13/base13_6/test_base13_6_3.png")
         sleep(3)
         self.driver.set_network_connection(4)
