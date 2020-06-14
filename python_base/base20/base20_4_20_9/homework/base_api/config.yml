@@ -1,0 +1,28 @@
+access_token:
+  url: https://qyapi.weixin.qq.com/cgi-bin/gettoken
+  method: get
+  corpid: wwaa5e12b39afbafe3
+  corpsecret: 2_YAsegpEFFziREvf3GB5Vr2bIgAP7cBIWr35DN_b-s
+  name: access_token
+create_label:
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/create
+  method: post
+update_label_name:
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/update
+  method: post
+delete_label:
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/delete
+  method: get
+get_label_member:
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/get
+  method: get
+add_label_member:
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/addtagusers
+  method: post
+delete_label_member:
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/deltagusers
+  method: post
+getlist_label:
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/list
+  method: get
+
