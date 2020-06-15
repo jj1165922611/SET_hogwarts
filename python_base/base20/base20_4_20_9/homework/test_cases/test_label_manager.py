@@ -21,10 +21,13 @@ class TestLabelManager:
                   {"tagname":"Testing3","tagid":3}]
     def setup(self):
         self.label_manager=LabelManager()
+        self.token = self.label_manager.get_token(
+            "G:/python/SET_hogwarts/python_base/base20/base20_4_20_9/homework/base_api/config.yml")
 
     @classmethod
     def teardown_class(cls):
         label_manager=LabelManager()
+        label_manager.get_token("G:/python/SET_hogwarts/python_base/base20/base20_4_20_9/homework/base_api/config.yml")
         label_manager.delete_label(1)
         label_manager.delete_label(2)
         label_manager.delete_label(3)

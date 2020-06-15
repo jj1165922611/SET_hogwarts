@@ -13,7 +13,6 @@ class LabelManager(WeWork):
     def __init__(self):
         self._filename="G:/python/SET_hogwarts/python_base/base20/base20_4_20_9/homework/base_api/config.yml"
         self._data=self.get_yaml(self._filename)
-        self.token = self.get_token(self._filename)
 
     def create_label(self,testdata=None):
         data=self._data["create_label"]
