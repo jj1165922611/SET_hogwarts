@@ -6,86 +6,59 @@
 # @Software   : Visual Studio Code
 # @Description: Python函数
 
-# 必须参数
+# 1、定义函数
+def method1():
+    print("hello world")
+print(method1())
 
-
-def method(a):
+# 2、必须参数
+def method2(a):
     print(a)
-    return a+2
+print(method2(2))
 
-
-print(method(1))
-
-# 默认参数
-
-
+# 3.1、默认参数
 def fun(a=2):
     print(a)
-
-
 print(fun())
 
-# 默认参数只会执行一次，这条规则在默认值为可变对象时很重要
-
-
+# 3.2默认参数只会执行一次，这条规则在默认值为可变对象时很重要
 def para(a, b=[]):
     b.append(a)
     return b
-
-
 print(para(1))
 print(para(2))
 
-# 关键字参数
-
-
+# 4.1、关键字参数
 def keypara(a, b):
     print(a)
     print(b)
-
-
 print(keypara(b="bbb", a="aaa"))
 print(keypara("aaaa", b="bbbb"))
 # print(keypara(b="bbbb","aaaa")) 关键字参数必须在位置参数的后面
-
-# 字典参数
-
-
-def dic(**a):
-    print(a.keys())
-    print(a.values())
-
-
-print(dic(aa=1))
-
-# 元组参数
-
-
+# 4.2、字典参数
+def dic(**aa):
+    print(aa.keys())
+    print(aa.values())
+print(dic(b=2,c=3,d=4))
+# 4.3、元组参数
+print("----4.3元组参数-----")
 def tuple_(*a):
     print(a[0])
-
-
+    print(a[1])
+    print(a[2])
 print(tuple_(11321, 2, 3, 4))
-
-# 特殊参数
-
-
+# 4.4、特殊参数
 def only(*, a):
     print(a)
-
-
 print(only(a=1))
-
-# 解包
-list_a = [3, 6]
+# 4.5、解包元组
+print("-----4.5解包元组------")
+list_a = (3, 6)
 keypara(*list_a)
+# 4.6、解包字典
 dic = {"b": 1, "a": 2}
 keypara(**dic)
-
-# Lambda表达式
-
-
-def y(x, y, z): return x+y+z
-
-
+# 5、Lambda表达式
+y =lambda x, y, z:  x + y + z
 print(y(2, 3, 4))
+
