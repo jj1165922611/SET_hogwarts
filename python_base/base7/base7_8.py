@@ -14,6 +14,8 @@ except ValueError:
     print("输入需要是数值型整数")
 except ZeroDivisionError:
     print("被除数不能为0")
+except:
+    print("通用型异常")
 else:
     print("程序没有发生异常")
 finally:
@@ -29,4 +31,3 @@ raise MyException("value1","value2")
 x=10
 if x!=5:
     raise Exception("这是抛出的异常")
-

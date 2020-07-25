@@ -7,7 +7,7 @@
 # @Description: python输入与输出
 
 import json
-# 字面量插值
+# 1、字面量插值
 name = "Joey"
 age = 20
 salary = 5000.133
@@ -27,19 +27,19 @@ print(e.format(**dict_b))
 # F-String，python3.6以后才出现
 print(f"my name is {name}, my age is {list_a[1]}, my salary is {dict_a.get('salary')+1000}")
 
-# 文件读取
+# 2、文件读取
 
-file=open("python_base/file7-7.txt")
+file=open("file7_7.txt")
 print(file.read())
 file.close()
-file=open("python_base/file7-7.txt")
+file=open("file7_7.txt")
 print(file.readline())
 file.close()
-file=open("python_base/file7-7.txt")
+file=open("file7_7.txt")
 print(file.readlines())
 file.close()
 
-with open("python_base/file7-7.txt") as f :
+with open("file7_7.txt") as f :
     while True:
         line =f.readline()
         if line:
@@ -47,16 +47,16 @@ with open("python_base/file7-7.txt") as f :
         else:
             break
 
-# Json
+# 3、Json
 str_a='{"name":"小明","age":20,"salary":100}'
 json_a=json.loads(str_a)
 print(json_a)
-str_b=json.dumps(json_a,sort_keys=True,indent=4)
+str_b=json.dumps(json_a,sort_keys=True,indent=4,ensure_ascii=False)
 print(str_b)
 str_c=json.dumps(json_a)
 print(str_c)
-json.dump(json_a,open("python_base/json7-7.json","w"))
+json.dump(json_a,open("json7_7.json","w"),ensure_ascii=False)
 
-json_b=json.load(open("python_base/json7-7.json","r"))
+json_b=json.load(open("json7_7.json","r"))
 print(json_b)
 print(json_b.get("name"))
