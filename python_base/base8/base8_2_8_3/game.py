@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding -*-
-# @
-# @
-# @
-# @
-# @
+# @Time       : 2020-07-26
+# @Author     : Joey Jiang
+# @File       : python_oop.py
+# @Software   : PyCharm
+# @Description: python脚本编写实战
 
 """
 一个回合制游戏，每个角色都有hp 和power，hp代表血量，power代表攻击力，hp的初始值为1000，power的初始值为200。
