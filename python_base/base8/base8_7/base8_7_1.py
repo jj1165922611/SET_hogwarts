@@ -10,19 +10,28 @@ import json
 class PracticeJson:
 
     def __init__(self):
-        self.data="{'name':'xiaohong','age':'12'}"
+        self.dict={'name':'xiaohong','age':12}
     def practice_dump(self):
-        with open("./demo.json","w") as fs:
-            json.dump(self.data,fp=fs)
+        print("---------------dump------------------")
+        with open("demo.json","w") as fs:
+            json.dump(self.dict, fp=fs)
     def practice_dumps(self):
-        print(type(self.data))
-        print(json.dumps(self.data))
-        print(type(self.data))
+        print("---------------dumps------------------")
+        print(type(self.dict))
+        print(json.dumps(self.dict))
+        print(type(self.dict))
     def practice_load(self):
-        pass
+        print("---------------load------------------")
+        with open("demo.json","r") as f:
+            print(json.load(f))
     def practice_loads(self):
-        pass
+        print("---------------loads------------------")
+        json_data=json.dumps(self.dict)
+        print(type(json_data))
+        print(type(json.loads(json_data)))
 
 if __name__ == "__main__":
-    PracticeJson().practice_dumps()
     PracticeJson().practice_dump()
+    PracticeJson().practice_dumps()
+    PracticeJson().practice_load()
+    PracticeJson().practice_loads()
