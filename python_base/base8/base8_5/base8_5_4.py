@@ -6,6 +6,9 @@
 # @Software   : Visual Studio Code
 # @Description: python多线程处理
 
+'''
+threading运行线程，比_thread简单
+'''
 import logging
 from time import sleep,ctime
 import threading
@@ -20,7 +23,7 @@ def loop1():
     logging.info("end loop1 at "+ctime())
 def main():
     logging.info("start all at "+ctime())
-    t1=threading.Thread( target=loop0)
+    t1=threading.Thread(target=loop0)
     t1.start()
     t2=threading.Thread(None,loop1)
     t2.start()

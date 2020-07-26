@@ -12,6 +12,8 @@ import urllib.request
 import math
 
 # os
+print("--------------------os-----------------------")
+os.mkdir("a")
 if os.path.exists("a"):
     os.removedirs("a")
     os.mkdir("a")
@@ -25,6 +27,7 @@ if not os.path.exists("d/test.txt"):
     f.close()
 
 # time
+print("--------------------time-----------------------")
 print(time.time())
 time.sleep(1)
 print(time.localtime())
@@ -36,12 +39,14 @@ print(time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time()-60*60*24*2)))
 
 
 # urllib
+print("--------------------urllib-----------------------")
 response=urllib.request.urlopen("http://www.baidu.com")
 print(response.status)
 # print(response.read())
 print(response.headers)
 
 # math
+print("--------------------math-----------------------")
 print(math.ceil(3.111))
 print(math.floor(3.11))
-print(math.floor(9))
+print(math.sqrt(9))

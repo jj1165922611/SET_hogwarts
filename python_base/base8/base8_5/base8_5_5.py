@@ -6,6 +6,9 @@
 # @Software   : Visual Studio Code
 # @Description: python多线程处理
 
+'''
+构造线程的另一种方法，继承thread类，并重写run()方法，在run()方法中定义具体要执行的任务
+'''
 import logging
 import threading
 from time import sleep,ctime

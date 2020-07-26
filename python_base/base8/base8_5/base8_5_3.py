@@ -6,6 +6,9 @@
 # @Software   : Visual Studio Code
 # @Description: python多线程处理
 
+'''
+_thread加上锁运行和守护线程
+'''
 import logging
 from time import ctime,sleep
 import _thread
