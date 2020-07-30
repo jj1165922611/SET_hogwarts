@@ -17,7 +17,8 @@ class SeleniumPython:
     def go_to_baidu(self):
         driver=webdriver.Chrome()
         driver.get("https://www.baidu.com/")
-        driver.find_element_by_id("kw").send_keys("hogwarts")
+        driver.find_element_by_id("kw").send_keys(self.sheet["A2"].value)
         driver.find_element_by_id("su").click()
         time.sleep(3)
-        driver.close()
+        driver.quit()
+SeleniumPython().go_to_baidu()

@@ -14,3 +14,19 @@ register=[]
 
 def registy(func):
     register.append(func)
+    return func
+
+@registy
+def f1():
+    print("f1")
+@registy
+def f2():
+    print("f2")
+def f3():
+    print("f3")
+if __name__=="__main__":
+    print("hello")
+    print(f"register ->{register}")
+    f1()
+    f2()
+    f3()

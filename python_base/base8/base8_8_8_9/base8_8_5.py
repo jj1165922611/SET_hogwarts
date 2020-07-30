@@ -7,12 +7,12 @@
 # @Description: python外部源文件处理（三）
 
 '''
-写一个简单的例子
+使用装饰器例子
 '''
 
 def log(func):
     print("{} is running".format(func))
-    return func
+    return func # 装饰器必须有返回值
 @log
 def foo():
     print("this is a func ,foo")

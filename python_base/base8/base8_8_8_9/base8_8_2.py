@@ -7,11 +7,12 @@
 # @Description: python外部源文件处理（二）
 import yaml
 
-'''
+
 data=[1,2,3]
+print(yaml.dump(data))
 with open("demo.yml","w") as fp:
     yaml.dump(data,fp)
-'''
+
 
 print(yaml.safe_load(open("demo.yml")))
 

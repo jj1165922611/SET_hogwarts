@@ -7,7 +7,7 @@
 # @Description: python外部源文件处理（三）
 
 '''
-写一个简单的例子
+未使用装饰器的例子
 '''
 def foo():
     print("this is a func ,foo")

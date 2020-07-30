@@ -5,6 +5,10 @@
 # @File       : test_base9_2_4.py
 # @Software   : Visual Studio Code
 # @Description: python unittest测试框架
+
+'''
+执行用例方法4：unittest.defaultTestLoader.discover(),匹配某个路径下所有以test开头的py文件，执行这些文件下所有的测试用例
+'''
 import os
 import unittest
 import time

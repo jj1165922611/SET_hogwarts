@@ -6,6 +6,9 @@
 # @Software   : Visual Studio Code
 # @Description: python unittest测试框架
 
+'''
+执行用例方法2：unittest.TestSuite(),加入容器中执行
+'''
 import unittest
 class Demo1Test(unittest.TestCase):
     @classmethod

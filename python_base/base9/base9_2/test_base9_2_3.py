@@ -6,6 +6,9 @@
 # @Software   : Visual Studio Code
 # @Description: python unittest测试框架
 
+'''
+执行用例方法3：unittest.TestLoader(),同时测试多个类
+'''
 import unittest
 from python_base.base9.base9_2.test_base9_2_2 import Demo1Test, Demo2Test
 if __name__ == "__main__":
