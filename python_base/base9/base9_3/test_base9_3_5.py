@@ -5,6 +5,9 @@
 # @File       : test_base9_3_5.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+'''
+@pytest.fixture()装饰器
+'''
 import pytest
 @pytest.fixture()
 def login():

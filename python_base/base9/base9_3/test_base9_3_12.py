@@ -5,6 +5,9 @@
 # @File       : test_base9_3_12.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+'''
+参数组合，如下共6条测试用例
+'''
 import pytest
 @pytest.mark.parametrize("x",[1,2])
 @pytest.mark.parametrize("y",[3,4,5])

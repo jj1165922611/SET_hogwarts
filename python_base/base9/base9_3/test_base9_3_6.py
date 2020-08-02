@@ -5,6 +5,9 @@
 # @File       : test_base9_3_6.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+'''
+建一个公共模块conftest，编写@pytest.fixture()装饰器方法 connect，其他测试工程师也能使用
+'''
 import pytest
 
 class TestDemo:

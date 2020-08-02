@@ -5,6 +5,10 @@
 # @File       : test_base9_3_7.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+'''
+1、scope="module"本身是模块调用一次，因为加了yield，所以模块前执行yield前的内容，模块后执行yield后的内容
+2、注意这种方式没有返回值，如果希望返回使用addfinalizer
+'''
 import pytest
 
 @pytest.fixture(scope="module")

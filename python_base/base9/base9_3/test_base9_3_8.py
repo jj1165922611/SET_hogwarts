@@ -5,6 +5,10 @@
 # @File       : test_base9_3_8.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+'''
+因为@pytest.fixture()默认scope是function。autouse是每个用例都调用open()函数，
+所以会在每个用例执行前打印"打开浏览器"，每个用例执行后打印"执行teardown方法"和"关闭浏览器"
+'''
 import pytest
 
 @pytest.fixture(autouse=True)

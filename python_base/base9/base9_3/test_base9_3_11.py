@@ -5,11 +5,13 @@
 # @File       : test_base9_3_11.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+'''
+参数化，如下共3条用例
+'''
 import pytest
 @pytest.mark.parametrize("test_input,expected",[("3+5",8),("10+10",21),("30+30",60)])
 def test_eval(test_input,expected):
     assert eval(test_input)==expected
-
 
 if __name__ == "__main__":
     pytest.main(['-v','-s','test_base9_3_11.py'])

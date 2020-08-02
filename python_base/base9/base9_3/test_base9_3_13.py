@@ -5,6 +5,9 @@
 # @File       : test_base9_3_13.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+'''
+indirect=True，传入的参数当做函数来执行
+'''
 import pytest
 test_user_data=['Jack','Joey']
 @pytest.fixture(scope="module")

@@ -5,6 +5,10 @@
 # @File       : test_base9_3_14.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+'''
+mark.skipif,如果符合条件，跳过某个用例
+当系统平台是windows时，跳过用例test_login_2
+'''
 import pytest
 import sys
 test_user_data=['Jack','Joey']

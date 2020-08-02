@@ -5,6 +5,9 @@
 # @File       : test_base9_3_15.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+'''
+xfail：实际没测，结果为XPASS或者XFail不是真的pass或者fail
+'''
 import pytest
 test_user_data=['Jack','Joey']
 @pytest.fixture(scope="module")

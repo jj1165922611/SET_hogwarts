@@ -6,6 +6,9 @@
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
 
+'''
+测试文件test_*开头，测试函数以test_*开头
+'''
 def func(x):
     x=x+1
     print(f"x={x}")

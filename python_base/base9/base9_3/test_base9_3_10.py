@@ -5,6 +5,9 @@
 # @File       : test_base9_3_10.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+'''
+传递参数：params，传入的数据需要使用一个固定的参数名request来接收
+'''
 import pytest
 
 @pytest.fixture(params=["a","b","c"])

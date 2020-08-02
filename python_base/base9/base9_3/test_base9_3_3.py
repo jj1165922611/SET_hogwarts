@@ -5,6 +5,11 @@
 # @File       : test_base9_3_3.py
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
+
+'''
+1、测试文件test_*开头，测试类以Test开头，测试方法以test_*开头
+2、Pycharm运行pytest
+'''
 import pytest
 class TestDemo:
     
