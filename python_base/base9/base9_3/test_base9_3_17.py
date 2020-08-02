@@ -6,7 +6,7 @@
 # @Software   : Visual Studio Code
 # @Description: pytest测试框架
 '''
-生成测试用例报告
+生成测试报告
 '''
 import pytest
 
