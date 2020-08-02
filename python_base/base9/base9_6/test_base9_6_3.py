@@ -6,6 +6,9 @@
 # @Software   : Pycharm
 # @Description: 测试报告美化与定制
 
+'''
+@@allure.link 关联一个链接
+'''
 import pytest
 import allure
 

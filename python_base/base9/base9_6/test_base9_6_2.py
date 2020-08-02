@@ -5,7 +5,13 @@
 # @File       : test_9_6_2.py
 # @Software   : Pycharm
 # @Description: 测试报告美化与定制
+'''
+allure的特性
+    @allure.feature():功能
+    @allure.story():子功能
+    with allure.step():测试步骤
 
+'''
 import pytest
 import allure
 

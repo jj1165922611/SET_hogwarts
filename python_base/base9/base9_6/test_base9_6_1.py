@@ -6,6 +6,9 @@
 # @Software   : Pycharm
 # @Description: 测试报告美化与定制
 
+'''
+allure官网提供的pytest结合allure示例
+'''
 import pytest
 
 def test_success():

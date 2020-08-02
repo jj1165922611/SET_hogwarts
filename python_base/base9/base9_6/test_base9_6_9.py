@@ -6,11 +6,11 @@
 # @Software   : Pycharm
 # @Description: 测试报告美化与定制
 
+'''
+通过allure.attach(body(内容),name,attachment_type,extension)加入网页
+'''
 import pytest
 import allure
-
-def test_attach_text():
-    allure.attach("这是一个纯文本",attachment_type=allure.attachment_type.TEXT)
 
 def test_attach_html():
     allure.attach("<html>哈哈</html><body>我是谁</body>","一个网页",attachment_type=allure.attachment_type.HTML)

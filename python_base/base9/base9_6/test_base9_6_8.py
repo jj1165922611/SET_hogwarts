@@ -6,6 +6,9 @@
 # @Software   : Pycharm
 # @Description: 测试报告美化与定制
 
+'''
+通过allure.attach("xxxx",attachment_type,exntension)加入纯文本信息
+'''
 import pytest
 import allure
 

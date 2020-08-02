@@ -6,6 +6,15 @@
 # @Software   : Pycharm
 # @Description: 测试报告美化与定制
 
+'''
+1、重要性级别
+Block:阻塞
+Critical:严重的
+Nromal:正常问题
+Minor:不太重要
+Trivial:不重要
+2、执行时pytest -s -v 文件名 --allure-severities 分类1,分类2
+'''
 import pytest
 import allure
 

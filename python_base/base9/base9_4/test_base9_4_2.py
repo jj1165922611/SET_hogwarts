@@ -6,6 +6,9 @@
 # @Software   : Pycharm
 # @Description: 参数化用例
 
+'''
+yaml数据参数化
+'''
 import pytest
 import yaml
 

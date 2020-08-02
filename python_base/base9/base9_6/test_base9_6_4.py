@@ -6,12 +6,11 @@
 # @Software   : Pycharm
 # @Description: 测试报告美化与定制
 
+'''
+@allure.link(地址,name="链接"),显示"链接"，实际是可点击的地址
+'''
 import pytest
 import allure
-
-@allure.link("http://www.baidu.com")
-def test_with_link():
-    print("这是一条加了链接的测试用例")
 
 @allure.link("http://www.baidu.com",name="链接")
 def test_with_link2():
