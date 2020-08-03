@@ -5,6 +5,9 @@
 # @File       : test_calc_4.py
 # @Software   : Visual Studio Code
 # @Description: 计算器
+'''
+使用pytest.mark.parametrize()进行参数化，结合yaml文件数据驱动
+'''
 import pytest
 from python_base.base9.base9_7.calc import Calc
 from decimal import Decimal

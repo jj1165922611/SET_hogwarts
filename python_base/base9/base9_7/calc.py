@@ -5,7 +5,9 @@
 # @File       : calc.py
 # @Software   : Visual Studio Code
 # @Description: 计算器
-
+'''
+被测类Calc
+'''
 class Calc:
     def add(self,a,b):
         return a+b

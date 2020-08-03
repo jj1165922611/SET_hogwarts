@@ -5,6 +5,9 @@
 # @File       : test_calc_1.py
 # @Software   : Visual Studio Code
 # @Description: 计算器
+'''
+有多条用例时，每个用例中都要进行一次实例化calc=Calc()
+'''
 import pytest
 from python_base.base9.base9_7.calc import Calc
 class TestCalc:

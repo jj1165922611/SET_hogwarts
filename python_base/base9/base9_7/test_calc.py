@@ -5,9 +5,14 @@
 # @File       : test_calc.py
 # @Software   : Visual Studio Code
 # @Description: 计算器
+'''
+1、编写类Calc的测试用例
+2、Decimal保证小数运算精度不变
+'''
 import pytest
-from python_base.base9.base9_7.calc import Calc
 from decimal import Decimal
+from python_base.base9.base9_7.calc import Calc
+
 class TestCalc:
     def test_add_(self):
         calc=Calc()
