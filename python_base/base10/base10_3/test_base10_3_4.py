@@ -5,6 +5,9 @@
 # @File       : test_base10_3_4.py
 # @Software   : PyCharm
 # @Description: selenium用例编写
+'''
+self.driver.quit()方法会关闭并退出浏览器
+'''
 import time
 
 from selenium import webdriver

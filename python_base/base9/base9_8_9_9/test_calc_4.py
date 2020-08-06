@@ -5,6 +5,9 @@
 # @File       : test_calc_4.py
 # @Software   : PyCharm
 # @Description: pytest测试实战（二）
+'''
+测试步骤的自动化
+'''
 from python_base.base9.base9_8_9_9.calc_1 import Calc
 import pytest,yaml
 class TestCalc:

@@ -5,6 +5,9 @@
 # @File       : test_calc.py
 # @Software   : PyCharm
 # @Description: pytest测试实战（二）
+'''
+pytest-ordering控制执行顺序
+'''
 from python_base.base9.base9_8_9_9.calc import Calc
 import pytest,yaml
 class TestCalc:

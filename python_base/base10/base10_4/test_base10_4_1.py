@@ -5,6 +5,11 @@
 # @File       : test_base10_4_1.py
 # @Software   : PyCharm
 # @Description: 隐式等待与显式等待
+'''
+直接等待：强制等待，线程休眠一段时间
+
+time.sleep(3)
+'''
 import time
 
 from selenium import webdriver

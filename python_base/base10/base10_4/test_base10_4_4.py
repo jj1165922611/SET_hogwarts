@@ -5,6 +5,11 @@
 # @File       : test_base10_4_4.py
 # @Software   : PyCharm
 # @Description: 隐式等待与显式等待
+'''
+显示等待：在代码中定义等待条件，当条件发生时才继续执行代码
+
+条件可以为一个函数，函数里必须有参数；条件还可以是selenium提供的条件expected_conditions
+'''
 import time
 
 from selenium import webdriver

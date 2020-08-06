@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time       : 2020-05-20
 # @Author     : Joey Jiang
-# @File       : test_base9_8_1.py
+# @File       : base9_8_1.py
 # @Software   : PyCharm
 # @Description: pytest测试实战（二）
 
@@ -24,19 +24,19 @@ print(h2.hello)
 print(Hello.hello)
 
 h1.hello="Hello1"
-print(h1.hello)
-print(h2.hello)
-print(Hello.hello)
+print(h1.hello,"Hello1")
+print(h2.hello,"Hello")
+print(Hello.hello,"Hello")
 
 Hello.hello="hello2"
-print(h1.hello)
-print(h2.hello)
-print(Hello.hello)
+print(h1.hello,"Hello1")
+print(h2.hello,"Hello2")
+print(Hello.hello,"Hello2")
 
 h2.hello="hello3"
-print(h1.hello)
-print(h2.hello)
-print(Hello.hello)
+print(h1.hello,"Hello1")
+print(h2.hello,"Hello3")
+print(Hello.hello,"Hello2")
 
 h1.a1()
 h1.a2()

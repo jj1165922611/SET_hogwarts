@@ -6,6 +6,9 @@
 # @SOftware   : PyCharm
 # @Description: selenium安装
 
+'''
+selenium在python中如何使用
+'''
 from selenium import webdriver
 def test_baidu():
     driver=webdriver.Chrome()

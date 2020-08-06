@@ -5,7 +5,9 @@
 # @File       : test_base9_9_4.py
 # @Software   : PyCharm
 # @Description: pytest测试实战（三）
-
+'''
+fixture作用域
+'''
 import pytest
 
 # fixtures documentation order example

@@ -5,6 +5,11 @@
 # @File       : test_base10_4_2.py
 # @Software   : PyCharm
 # @Description: 隐式等待与显式等待
+'''
+隐式等待：设置一个等待时间，轮询查找（默认0.5秒）元素是否出现，如果没有出现抛出异常
+
+self.driver.implicitly_wait(5)
+'''
 import time
 
 from selenium import webdriver
