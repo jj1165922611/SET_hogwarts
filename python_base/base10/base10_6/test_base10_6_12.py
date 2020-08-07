@@ -31,7 +31,7 @@ class TestTouchAction:
         action.scroll(0,10000)
         action.perform()
         sleep(2)
-        ele2 = self.driver.find_element(By.LINK_TEXT, "下一页>").click()
+        ele2 = self.driver.find_element(By.LINK_TEXT, "下一页 >").click()
         sleep(2)
 
 

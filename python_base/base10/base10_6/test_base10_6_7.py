@@ -23,6 +23,7 @@ class TestActionChains:
 
     def test_action_chains_keys(self):
         self.driver.get("http://sahitest.com/demo/label.htm")
+        sleep(3)
         element=self.driver.find_element(By.XPATH,'/html/body/label[1]/input')
         action=ActionChains(self.driver)
         action.key_down(Keys.CONTROL).send_keys("aaaaa").key_up(Keys.CONTROL)

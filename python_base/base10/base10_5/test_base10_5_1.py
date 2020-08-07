@@ -5,6 +5,12 @@
 # @File       : test_10_5_1.py
 # @Software   : PyCharm
 # @Description: web控件定位与常见操作
+'''
+xpath和css selector
+
+xpath完全支持selenium和appium
+css selector完全支持selenium；appium因为Android的原生控件没有使用css样式，所以一般出现webview表示手机软件中嵌套网页时才可以使用
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions

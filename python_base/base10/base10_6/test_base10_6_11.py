@@ -5,6 +5,12 @@
 # @File       : test_base10_6_11.py
 # @Software   : PyCharm
 # @Description: web控件的交互进阶
+
+'''
+TouchActions手势控制
+
+报错：w3c
+'''
 from time import sleep
 
 from selenium import webdriver

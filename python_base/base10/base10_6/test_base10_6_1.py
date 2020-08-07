@@ -6,6 +6,15 @@
 # @Software   : PyCharm
 # @Description: web控件的交互进阶
 
+'''
+ActionChains()：
+
+点击：click()
+双击：double_click
+右击：context_click
+
+分布写法
+'''
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By

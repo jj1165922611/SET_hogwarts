@@ -4,7 +4,15 @@
 # @Author     : Joey Jiang
 # @File       : test_base10_7_2.py
 # @Software   : PyCharm
-# @Description: 多窗口处理与网页fram
+# @Description: 多窗口处理与网页frame
+'''
+多窗口处理：
+
+获取当前窗口
+获取所有窗口
+切换要操作的窗口
+切换回默认窗口
+'''
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By

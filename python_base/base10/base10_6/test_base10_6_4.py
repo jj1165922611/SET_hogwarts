@@ -5,6 +5,14 @@
 # @File       : test_base10_6_4.py
 # @Software   : PyCharm
 # @Description: web控件的交互进阶
+'''
+ActionChains()：
+
+拖拽元素:drag_and_drop(source,target)
+pause()可以实现动作之间的等待
+
+分布写法
+'''
 from time import sleep
 
 from selenium import webdriver

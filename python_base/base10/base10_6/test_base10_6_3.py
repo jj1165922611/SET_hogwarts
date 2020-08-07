@@ -5,6 +5,13 @@
 # @File       : test_base10_6_3.py
 # @Software   : PyCharm
 # @Description: web控件的交互进阶
+'''
+ActionChains()：
+
+拖拽元素:drag_and_drop(source,target)
+问题在于sleep()不会生效
+分布写法
+'''
 from time import sleep
 
 from selenium import webdriver

@@ -4,7 +4,10 @@
 # @Author     : Joey Jiang
 # @File       : test_base10_7_4.py
 # @Software   : PyCharm
-# @Description: 多窗口处理与网页fram
+# @Description: 多窗口处理与网页frame
+'''
+网页frame
+'''
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By

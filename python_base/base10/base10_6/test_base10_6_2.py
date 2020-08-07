@@ -5,6 +5,13 @@
 # @File       : test_base10_6_2.py
 # @Software   : PyCharm
 # @Description: web控件的交互进阶
+'''
+ActionChains()：
+
+鼠标移动到某个元素上:move_to_element()
+
+分布写法
+'''
 from time import sleep
 
 from selenium import webdriver

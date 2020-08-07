@@ -4,7 +4,10 @@
 # @Author     : Joey Jiang
 # @File       : test_base10_7_1.py
 # @Software   : PyCharm
-# @Description: 多窗口处理与网页fram
+# @Description: 多窗口处理与网页frame
+'''
+立即注册的定位方式不对
+'''
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -19,6 +22,7 @@ class TestWindow:
     def test_window(self):
         self.driver.get("https://www.baidu.com")
         self.driver.find_element(By.XPATH,'//*[@id="u1"]/a[2]').click()
+        # 定位方式不对
         self.driver.find_element(By.LINK_TEXT,'//*[@id="passport-login-pop-dialog"]/div/div/div/div[3]/a').click()
         current_handle=self.driver.current_window_handle
         all_handle=self.driver.window_handles
