@@ -5,6 +5,13 @@
 # @File       : test_base11_3_2.py
 # @Software   : PyCharm
 # @Description: 文件上传弹框处理
+'''
+文件上传
+
+input标签：
+    ele=driver.find_element(By.ID,"上传按钮id")
+    ele.send_keys("文件路径+文件名")
+'''
 from time import sleep
 
 from selenium import webdriver

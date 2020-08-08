@@ -5,6 +5,13 @@
 # @File       : test_base11_3_3.py
 # @Software   : PyCharm
 # @Description: 文件上传弹框处理
+'''
+弹框处理
+
+获取弹窗：switch_to.alert()
+
+text\accept()\dismiss()\send_keys()
+'''
 from time import sleep
 
 from selenium import webdriver
