@@ -5,7 +5,14 @@
 # @File       : test_base11_1.py
 # @Software   : PyCharm
 # @Description: selenium多浏览器处理
+'''
+测试类继承Base类后，可以直接使用父类中的方法。
 
+命令行执行：
+    windows：set browser=chrome
+            pytest test_base11_1.py
+    others：browser=chrome pytest test_base_11_1.py
+'''
 from selenium import webdriver
 import os
 
