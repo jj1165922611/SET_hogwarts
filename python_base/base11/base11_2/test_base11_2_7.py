@@ -5,6 +5,12 @@
 # @File       : test_base11_2_7.py
 # @Software   : PyCharm
 # @Description: 执行javaScript脚本
+'''
+时间控件
+
+页面上的值没有被改变
+控制台的输出是错的
+'''
 from time import sleep
 from selenium import webdriver
 class TestExecuteScript:

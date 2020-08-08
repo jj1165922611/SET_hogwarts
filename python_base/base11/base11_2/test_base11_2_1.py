@@ -5,6 +5,11 @@
 # @File       : test_base11_2_1.py
 # @Software   : PyCharm
 # @Description: 执行javaScript脚本
+'''
+execute_script()执行js脚本
+
+在浏览器开发者模式->console中调试
+'''
 from time import sleep
 
 from selenium import webdriver
@@ -21,5 +26,6 @@ class TestExecuteScript:
         self.driver.execute_script("document.getElementById('kw').value='Selenium框架'")
         self.driver.execute_script("document.getElementById('su').click()")
         self.driver.execute_script("document.documentElement.scrollTop=10000")
-        self.driver.find_element_by_css_selector("#page > a:nth-last-child(1)").click()
+        sleep(2)
+        self.driver.find_element_by_css_selector("#page > div > a.n").click()
         sleep(3)

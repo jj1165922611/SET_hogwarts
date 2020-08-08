@@ -5,6 +5,9 @@
 # @File       : test_base11_2_3.py
 # @Software   : PyCharm
 # @Description: 执行javaScript脚本
+'''
+for code in 中的js代码没有返回值，打印出来都是None
+'''
 from time import sleep
 
 from selenium import webdriver
@@ -21,7 +24,7 @@ class TestExecuteScript:
         self.driver.execute_script("document.getElementById('kw').value='Selenium框架'")
         self.driver.execute_script("document.getElementById('su').click()")
         self.driver.execute_script("document.documentElement.scrollTop=10000")
-        self.driver.find_element_by_css_selector("#page > a.n").click()
+        self.driver.find_element_by_css_selector("#page > div > a.n").click()
         sleep(2)
         for code in [
             "document.title",

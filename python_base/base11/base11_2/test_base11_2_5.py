@@ -5,6 +5,9 @@
 # @File       : test_base11_2_5.py
 # @Software   : PyCharm
 # @Description: 执行javaScript脚本
+'''
+只打印页面的title，而没有打印性能
+'''
 from time import sleep
 
 from selenium import webdriver
@@ -21,7 +24,8 @@ class TestExecuteScript:
         self.driver.execute_script("document.getElementById('kw').value='Selenium框架'")
         self.driver.execute_script("document.getElementById('su').click()")
         self.driver.execute_script("document.documentElement.scrollTop=10000")
-        self.driver.find_element_by_css_selector("#page > a.n").click()
+        sleep(2)
+        self.driver.find_element_by_css_selector("#page > div > a.n").click()
         sleep(2)
         code="return document.title;return JSON.stringify(performance.timing)"
         print(self.driver.execute_script(code))
