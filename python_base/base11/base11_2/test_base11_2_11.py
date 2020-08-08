@@ -5,6 +5,10 @@
 # @File       : test_base11_2_11.py
 # @Software   : PyCharm
 # @Description: 执行javaScript脚本
+'''
+时间控件
+
+'''
 from time import sleep
 from selenium import webdriver
 class TestExecuteScript:

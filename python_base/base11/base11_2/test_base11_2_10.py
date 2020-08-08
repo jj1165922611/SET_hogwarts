@@ -5,6 +5,13 @@
 # @File       : test_base11_2_10.py
 # @Software   : PyCharm
 # @Description: 执行javaScript脚本
+'''
+时间控件
+
+使用强制等待
+    页面上的值改变了
+    控制台的输出是对的
+'''
 from time import sleep
 from selenium import webdriver
 class TestExecuteScript:

@@ -5,6 +5,13 @@
 # @File       : test_base11_2_8.py
 # @Software   : PyCharm
 # @Description: 执行javaScript脚本
+'''
+时间控件
+
+缺少等待时间
+页面上的值没有被改变
+控制台的输出是对的
+'''
 from time import sleep
 from selenium import webdriver
 class TestExecuteScript:
