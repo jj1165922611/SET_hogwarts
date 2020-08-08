@@ -5,7 +5,9 @@
 # @File       : test_base11_6_1.py
 # @Software   : PyCharm
 # @Description: 企业微信的自动化登录
-
+'''
+remote复用已有浏览器
+'''
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 class TestLogin:

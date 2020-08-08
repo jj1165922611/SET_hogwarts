@@ -5,7 +5,10 @@
 # @File       : test_base11_6_2.py
 # @Software   : PyCharm
 # @Description: 企业微信的自动化登录
-
+'''
+cookie
+    获取：driver.get_cookies()
+'''
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time

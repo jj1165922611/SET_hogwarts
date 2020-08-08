@@ -5,7 +5,9 @@
 # @File       : test_base11_6_2.py
 # @Software   : PyCharm
 # @Description: 企业微信的自动化登录
-
+'''
+获取cookie并存入json文件
+'''
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time,json

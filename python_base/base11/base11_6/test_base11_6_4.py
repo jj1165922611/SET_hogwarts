@@ -5,7 +5,9 @@
 # @File       : test_base11_6_4.py
 # @Software   : PyCharm
 # @Description: 企业微信的自动化登录
-
+'''
+expiry是没有用的cookie，会导致报错，需要剔除
+'''
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
