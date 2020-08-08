@@ -5,7 +5,16 @@
 # @File       : test_weixin_auto_login1.py
 # @Software   : PyCharm
 # @Description: 企业微信的自动化登录
+'''
+remote复用浏览器
 
+1、关闭全部的Chrome
+2、找到Chrome的路径
+3、配置环境变量
+4、启动命令
+5、网址：http://localhost:9222
+6、写下面的代码
+'''
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 class TestLogin:

@@ -5,7 +5,9 @@
 # @File       : test_weixin_auto_login5.py
 # @Software   : PyCharm
 # @Description: 企业微信的自动化登录
-
+'''
+逻辑不对，正确的是test_base11_6_5.py和test_base11_6_6.py
+'''
 from selenium import webdriver
 import time,json
 

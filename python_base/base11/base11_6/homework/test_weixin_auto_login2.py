@@ -6,6 +6,10 @@
 # @Software   : PyCharm
 # @Description: 企业微信的自动化登录
 
+'''
+
+set_cookie的时候没有重新打开登录页面
+'''
 from selenium import webdriver
 import time,json
 
