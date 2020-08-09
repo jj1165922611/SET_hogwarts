@@ -9,14 +9,14 @@
 from python_base.base11.base11_7_11_8.add_member.page.main import Main
 
 class TestAddMember:
+    def setup(self):
+        self.main=Main()
     def test_add_member(self):
-        main=Main()
         # 7.添加断言，判断值是否在列表中。如在表示用例通过，不如在fail
-        assert "川建国7" in main.goto_add_member().add_member().get_member()
+        assert "川建国7" in self.main.goto_add_member().add_member().get_member()
 
     def test_add_member_fail(self):
-        main=Main()
-        assert "川建国" not in main.goto_add_member().add_member_fail().get_member()
+        assert "川建国" not in self.main.goto_add_member().add_member_fail().get_member()
         '''
         添加成员的传统的测试用例步骤（不使用PO思想）：
         1.进入首页点击添加成员
@@ -25,7 +25,7 @@ class TestAddMember:
         4.输入手机号
         5.点击保存
         6.获取成员列表的值
-        7.添加断言，判断值是否在列表中。如在表示用例通过，不如在fail
+        7.添加断言，判断值是否在列表中。如在表示用例通过，不在fail
         
         使用PO封装思想：
         1.在首页点击添加成员   “Main的goto_add_member接口”

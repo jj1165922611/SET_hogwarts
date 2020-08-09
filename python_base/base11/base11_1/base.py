@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time       : 2020-05-24
 # @Author     : Joey Jiang
-# @File       : base.py
+# @File       : base_page.py
 # @Software   : PyCharm
 # @Description: selenium多浏览器处理
 '''

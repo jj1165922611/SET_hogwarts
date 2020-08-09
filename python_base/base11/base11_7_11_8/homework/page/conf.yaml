@@ -1,0 +1,4 @@
+# 隐式等待的时间
+time: 10
+# 被测页面的url
+url: https://work.weixin.qq.com/wework_admin/frame#contacts
