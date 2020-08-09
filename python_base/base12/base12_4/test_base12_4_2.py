@@ -4,7 +4,12 @@
 # @Author     : Joey Jiang
 # @File       : test_base12_4_2.py
 # @Software   : PyCharm
-# @Description: app控件定位
+# @Description: app控件定位、
+'''
+字符串的浮点类型强制转成int类型出错
+
+先转成float类型再转成int类型就ok了
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 

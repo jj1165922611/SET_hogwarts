@@ -5,6 +5,9 @@
 # @File       : test_base12_4_1.py
 # @Software   : PyCharm
 # @Description: app控件定位
+'''
+基本配置错误和手写错误
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 

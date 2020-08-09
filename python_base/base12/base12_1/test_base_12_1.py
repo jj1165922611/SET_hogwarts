@@ -5,6 +5,12 @@
 # @File       : test_base_12_1.py
 # @Software   : PyCharm
 # @Description: appium环境安装与架构介绍
+'''
+导入依赖
+capability设置
+初始化driver
+执行代码
+'''
 from appium import webdriver
 class TestAppium:
     def test_appium(self):

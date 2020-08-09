@@ -5,6 +5,12 @@
 # @File       : test_base12_4_3.py
 # @Software   : PyCharm
 # @Description: app控件定位
+'''
+导入依赖
+capability设置
+初始化driver
+执行代码
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 

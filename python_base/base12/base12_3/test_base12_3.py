@@ -5,6 +5,12 @@
 # @File       : test_base12_3.py
 # @Software   : PyCharm
 # @Description: 元素定位与隐式等待
+'''
+导入依赖
+capability设置
+初始化driver
+执行代码
+'''
 from time import sleep
 
 from appium import webdriver
