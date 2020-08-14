@@ -5,6 +5,9 @@
 # @File       : test_base12_6_2.py
 # @Software   : PyCharm
 # @Description: 触屏操作自动化
+'''
+滑动：使用绝对坐标
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from appium.webdriver.common.touch_action import TouchAction

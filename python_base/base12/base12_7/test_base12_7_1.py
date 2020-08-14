@@ -5,6 +5,9 @@
 # @File       : test_base12_7_1.py
 # @Software   : PyCharm
 # @Description: 高级定位技巧
+'''
+xpath定位：股票号码为09988的父节点的父节点的父节点的子孙节点中的价格
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 

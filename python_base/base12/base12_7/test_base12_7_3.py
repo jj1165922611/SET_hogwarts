@@ -5,6 +5,9 @@
 # @File       : test_base12_7_3.py
 # @Software   : PyCharm
 # @Description: 高级定位技巧
+'''
+uiautomator定位：uiSelector()方法，resourceId定位方式
+'''
 from time import sleep
 
 from appium import webdriver

@@ -5,6 +5,9 @@
 # @File       : test_base13_2_1.py
 # @Software   : PyCharm
 # @Description: 属性获取与断言
+'''
+获取属性的方法是get_attribute()
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 

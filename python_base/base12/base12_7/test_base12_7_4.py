@@ -5,6 +5,9 @@
 # @File       : test_base12_7_4.py
 # @Software   : PyCharm
 # @Description: 高级定位技巧
+'''
+uiautomator定位：UiScrollable()滚动定位方法
+'''
 from time import sleep
 
 from appium import webdriver
@@ -27,5 +30,5 @@ class TestUiautomator:
         self.driver.quit()
 
     def test_uiautomator_scroll(self):
-        self.driver.find_element_by_android_uiautomator('new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("热门帖子").instance(0));')
+        self.driver.find_element_by_android_uiautomator('new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("热门帖子").instance(0));').click()
         sleep(3)

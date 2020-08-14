@@ -5,6 +5,9 @@
 # @File       : test_base12_5_1.py
 # @Software   : PyCharm
 # @Description: app控件交互
+'''
+元素的方法、元素的属性
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 
@@ -34,17 +37,16 @@ class TestLocator:
         '''
         self.driver.find_element(MobileBy.ID, "com.xueqiu.android:id/home_search").click()
         search_box=self.driver.find_element_by_id("com.xueqiu.android:id/search_input_text")
-        search_box.send_keys("alibaba")
-        print(search_box.is_enabled())
         if search_box.is_enabled():
+            print(search_box.text)
+            search_box.send_keys("alibaba")
+            print(search_box.is_enabled())
             print(search_box.size)
-            print(search_box.get_attribute("text"))
             print(search_box.location)
             search_box.click()
         ele_alibaba= self.driver.find_element_by_xpath('//*[@resource-id="com.xueqiu.android:id/name" and @text="阿里巴巴"]')
-        print(ele_alibaba.is_displayed())
+        print(ele_alibaba.get_attribute("displayed"))
         if ele_alibaba.is_displayed():
             print("搜索成功")
         else:
             print("搜索失败")
-        # 有问题

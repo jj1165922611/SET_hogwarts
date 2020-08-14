@@ -5,6 +5,10 @@
 # @File       : test_base12_8_1.py
 # @Software   : PyCharm
 # @Description: 显式等待机制
+'''
+显示等待用到两个类
+WenDriverWait()和expected_conditions()
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support import expected_conditions

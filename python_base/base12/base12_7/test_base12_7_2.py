@@ -5,6 +5,9 @@
 # @File       : test_base12_7_2.py
 # @Software   : PyCharm
 # @Description: 高级定位技巧
+'''
+xpath定位
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 

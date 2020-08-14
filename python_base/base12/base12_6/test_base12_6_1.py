@@ -5,6 +5,9 @@
 # @File       : test_base12_6_1.py
 # @Software   : PyCharm
 # @Description: 触屏操作自动化
+'''
+页面没有完全加载出来，程序就执行结束了
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from appium.webdriver.common.touch_action import TouchAction

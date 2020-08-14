@@ -5,6 +5,9 @@
 # @File       : test_base12_6_6.py
 # @Software   : PyCharm
 # @Description: 触屏操作自动化
+'''
+手势解锁
+'''
 from time import sleep
 
 from appium import webdriver

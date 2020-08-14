@@ -5,6 +5,13 @@
 # @File       : test_base13_1_1.py
 # @Software   : PyCharm
 # @Description: 特殊控件toast识别
+'''
+toast定位
+
+使用xpath查找
+		class定位
+		contains包含文本
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 

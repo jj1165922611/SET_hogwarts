@@ -5,6 +5,13 @@
 # @File       : test_base13_2_3.py
 # @Software   : PyCharm
 # @Description: 属性获取与断言
+'''
+Hamcrest断言：
+
+数值匹配，比较两个值是否接近
+
+包含某个字符
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from hamcrest import *
