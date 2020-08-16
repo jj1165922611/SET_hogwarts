@@ -5,6 +5,10 @@
 # @File       : test_base13_3_1.py
 # @SOftware   : PyCharm
 # @Description: 参数化用例
+
+'''
+没有加等待，找不到元素
+'''
 import pytest
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy

@@ -5,6 +5,9 @@
 # @File       : test_base13_6_3.py
 # @Software   : PyCharm
 # @Description: 设备交互API
+'''
+截图
+'''
 from time import sleep
 
 from appium import webdriver

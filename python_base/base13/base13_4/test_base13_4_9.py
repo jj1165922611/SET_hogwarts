@@ -5,6 +5,19 @@
 # @File       : test_base13_4_9.py
 # @Software   : PyCharm
 # @Description: android webview测试
+'''
+webview测试
+
+设备注意
+    android模拟器6.0默认支持webview操作（mumu不可以，genimotion和SDK自带的emulator可以）
+    其他模拟器或物理机需要打开app内开关（webview调试开关）
+
+chromedriverExecutable指定具体哪一个driver
+
+切换上下文进入webview页面
+
+问题是40行代码应该在切换上下文之后
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.common.by import By
@@ -28,6 +41,7 @@ class TestWebViewCase2:
     def teardown(self):
         self.driver.quit()
     def test_webview(self):
+        # 点击交易
         print(self.driver.contexts)
         self.driver.find_element(MobileBy.XPATH,"//*[@text='交易']").click()
         # self.driver.find_element(MobileBy.XPATH,"//*[@text='沪深']").click()

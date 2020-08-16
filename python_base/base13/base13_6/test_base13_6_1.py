@@ -5,6 +5,14 @@
 # @File       : test_base13_6_1.py
 # @Software   : PyCharm
 # @Description: 设备交互API
+'''
+模拟GSM电话：make_gsm_call
+模拟发短信：send_sms
+    注意：只能在模拟器上使用
+
+appium自动启动模拟器：des_caps['avd']="模拟器名称"
+    查看模拟器名称：emulator -list-avds
+'''
 from appium import webdriver
 from appium.webdriver.extensions.android.gsm import GsmCallActions
 

@@ -5,6 +5,12 @@
 # @File       : test_base13_6_2.py
 # @Software   : PyCharm
 # @Description: 设备交互API
+'''
+模拟网络切换
+
+appium自动启动模拟器：des_caps['avd']="模拟器名称"
+    查看模拟器名称：emulator -list-avds
+'''
 from time import sleep
 
 from appium import webdriver

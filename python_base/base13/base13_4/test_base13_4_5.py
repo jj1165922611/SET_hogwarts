@@ -5,6 +5,16 @@
 # @File       : test_base13_4_5.py
 # @Software   : PyCharm
 # @Description: android webview测试
+'''
+webview测试
+
+设备注意
+    android模拟器6.0默认支持webview操作（mumu不可以，genimotion和SDK自带的emulator可以）
+    其他模拟器或物理机需要打开app内开关（webview调试开关）
+
+问题是chromedriverExecutable配置出错。没有指定具体哪一个driver
+
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 

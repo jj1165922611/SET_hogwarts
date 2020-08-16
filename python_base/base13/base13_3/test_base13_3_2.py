@@ -4,7 +4,10 @@
 # @Author     : Joey Jiang
 # @File       : test_base13_3_2.py
 # @SOftware   : PyCharm
-# @Description: 参数化用例
+# @Description:
+'''
+self.driver.quit() 写错位置
+'''
 import pytest
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy

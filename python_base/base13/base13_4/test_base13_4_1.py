@@ -5,6 +5,14 @@
 # @File       : test_base13_4_1.py
 # @Software   : PyCharm
 # @Description: android webview测试
+'''
+纯web页面测试
+
+代码注意：
+    desired_caps
+        browserName='Browser'或者browserName='Chrome'
+        chromedriverExecutable='指定driver地址'
+'''
 from appium import webdriver
 
 class TestWebView:
