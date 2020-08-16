@@ -5,6 +5,20 @@
 # @File       : test_base13_8_1.py
 # @Software   : PyCharm
 # @Description: capalibility使用进阶
+'''
+策略相关
+    noReset
+    fullReset
+    dontStopAppOnReset
+性能相关
+    skipServerInstallation
+	skipDeviceInitialization
+	skipUnlock
+	skipLogCapture
+	systemPort
+	ignoreUnimportantViews
+	relaxed-security
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 
