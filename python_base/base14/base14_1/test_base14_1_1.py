@@ -4,7 +4,10 @@
 # @Author     : Joey Jiang
 # @File       : test_base14_1_1.py
 # @Software   : PyCharm
-# @Description: android webview技术原理
+# @Description: android
+'''
+主要是通过appium -g appium.log命令生成log文件，然后去分析这个文件
+'''
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.common.by import By
