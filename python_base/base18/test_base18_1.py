@@ -6,6 +6,9 @@
 # @Software   : PyCharm
 # @Description: 雪球app抓包与mock实战
 
+'''
+map local，不访问服务器，直接返回内容给客户端
+'''
 from mitmproxy import http
 
 def request(flow :http.HTTPFlow) -> None:

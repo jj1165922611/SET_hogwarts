@@ -5,6 +5,9 @@
 # @File       : test_base18_2.py
 # @Software   : PyCharm
 # @Description: 雪球app抓包与mock实战
+'''
+map remote：先拿到服务器响应结果，再对响应内容进行篡改
+'''
 import json
 
 def response(flow):
