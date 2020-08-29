@@ -19,7 +19,7 @@ class TestLabelManager:
     _create_data=[{"tagname":"Testing","tagid":1},
                   {"tagname":"Testing2","tagid":2},
                   {"tagname":"Testing3","tagid":3}]
-    def setup(self):
+    def setup_class(self):
         self.label_manager=LabelManager()
         self.token=self.label_manager.get_token("G:/python/SET_hogwarts/python_base/base20/base20_4_20_9/homework/base_api/config.yml")
 

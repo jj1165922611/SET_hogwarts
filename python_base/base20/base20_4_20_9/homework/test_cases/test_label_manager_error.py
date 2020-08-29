@@ -15,7 +15,7 @@ class TestLabelManager:
     _create_data=[{"tagname":"Testing","tagid":1},
                   {"tagname":"Testing2","tagid":2},
                   {"tagname":"Testing3","tagid":3}]
-    def setup(self):
+    def setup_class(self):
         self.label_manager=LabelManager()
 
     @pytest.mark.parametrize("testdata",_create_data)

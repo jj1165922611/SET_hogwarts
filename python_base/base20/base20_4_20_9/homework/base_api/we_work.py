@@ -18,6 +18,5 @@ class WeWork(BaseApi):
             "method" : data["method"],
             "params" : {"corpid": data["corpid"],"corpsecret": data["corpsecret"]},
         }
-        we_work=WeWork()
-        self.token = we_work.send_api(seq).json()[data["name"]]
+        self.token = self.send_api(seq).json()[data["name"]]
         return self.token
