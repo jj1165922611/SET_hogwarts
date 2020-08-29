@@ -5,6 +5,14 @@
 # @File       : test_base19_7_1.py
 # @Software   : PyCharm
 # @Description: header cookie处理
+
+'''
+传递cookie的两种方式
+
+    通过请求头信息传递
+
+    通过cookies关键字传递
+'''
 import requests
 class TestCookie:
     def test_cookie(self):

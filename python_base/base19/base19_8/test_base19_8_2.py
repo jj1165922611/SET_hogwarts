@@ -5,6 +5,9 @@
 # @File       : test_19_8_1.py
 # @Software   : PyCharm
 # @Description: 认证体系
+'''
+http basic，基本认证
+'''
 import requests
 from requests.auth import HTTPBasicAuth
 
