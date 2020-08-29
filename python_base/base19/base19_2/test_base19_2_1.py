@@ -6,6 +6,9 @@
 # @Software   : PyCharm
 # @Description: 接口请求构造
 
+'''
+requests框架：发送get请求。使用params参数
+'''
 import requests
 
 class TestRequests:

@@ -4,17 +4,17 @@
 # @Author     : Joey Jiang
 # @File       : test_base19_4.py
 # @Software   : PyCharm
-# @Description: 接口测试断言
+# @Description: json/xml请求
+'''
+requests框架：json请求
+    可以用关键字data参数发送，也可以用关键字json参数发送
+'''
 import requests
 
 
 class TestRequests:
-    def test_headers(self):
-        headers={'H':'Header Demo'}
-        r=requests.get("http://httpbin.testing-studio.com/get",headers=headers)
-        print("*"*20)
-        print(r.raw.read(10))
-        print("*"*20)
-        print(r.text)
+    def test_json(self):
+        json={'H':'Header Demo'}
+        r=requests.post("http://httpbin.testing-studio.com/post",json=json)
         print(r.json())
-        assert r.json()['headers']['H']=='Header Demo'
+        assert r.status_code==200

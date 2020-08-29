@@ -5,15 +5,19 @@
 # @File       : test_base19_3.py
 # @Software   : PyCharm
 # @Description: 接口测试断言
+'''
+requests框架：响应结果断言
+'''
 import requests
 
 
 class TestRequests:
-    def test_json(self):
-        json={'H':'Header Demo'}
-        r=requests.post("http://httpbin.testing-studio.com/post",json=json)
+    def test_headers(self):
+        headers={'H':'Header Demo'}
+        r=requests.get("http://httpbin.testing-studio.com/get",headers=headers)
         print("*"*20)
         print(r.raw.read(10))
         print("*"*20)
+        print(r.text)
         print(r.json())
-        assert r.status_code==200
+        assert r.json()['headers']['H']=='Header Demo'

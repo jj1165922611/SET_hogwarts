@@ -4,7 +4,12 @@
 # @Author     : Joey Jiang
 # @File       : test_base19_5_4.py
 # @Software   : PyCharm
-# @Description: 接口测试断言
+# @Description: json/xml断言
+'''
+使用jsonpath进行断言
+
+使用hamcrest进行断言
+'''
 import requests
 from jsonpath import jsonpath
 from hamcrest import *
@@ -16,4 +21,4 @@ class TestJsonPath:
         print(r.raw.read(10))
         print("*"*20)
         # assert r.json()['category_list']['categories'][0]['name'] == "霍格沃兹测试学院公众号"
-        assert_that(jsonpath(r.json(),'$..name')[0] == "霍格沃兹测试学院公众号")
+        assert_that(jsonpath(r.json(),'$..name')[0],equal_to("霍格沃兹测试学院公众号"))

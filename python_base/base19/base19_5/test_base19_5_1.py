@@ -4,7 +4,10 @@
 # @Author     : Joey Jiang
 # @File       : test_base19_5_1.py
 # @Software   : PyCharm
-# @Description: 接口测试断言
+# @Description: json/xml断言
+'''
+不使用jsonpath进行断言
+'''
 import requests
 
 class TestRequests:

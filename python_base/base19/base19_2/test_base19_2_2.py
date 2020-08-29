@@ -5,7 +5,9 @@
 # @File       : test_base19_2_2.py
 # @Software   : PyCharm
 # @Description: 接口请求构造
-
+'''
+requests框架：发送post请求。使用data参数，发送form表单
+'''
 import requests
 
 class TestRequests:

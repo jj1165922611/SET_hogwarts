@@ -5,7 +5,12 @@
 # @File       : test_base19_1.py
 # @Software   : PyCharm
 # @Description: 接口测试框架
-
+'''
+requests：接口测试框架
+功能全面
+使用简单
+定制性高
+'''
 import requests
 
 class TestRequests:
