@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time       : 2020-06-22
 # @Author     : Joey Jiang
-# @File       : test_base21_1.py
+# @File       : test_base22_1.py
 # @SoftWare   : PyCharm
 # @Description: 持续集成实战-UI自动化测试集成实战
 
