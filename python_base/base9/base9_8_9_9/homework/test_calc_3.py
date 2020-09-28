@@ -25,9 +25,10 @@ class TestCalc:
         for i in self.data[rule]:
             print(i)
             if "add"==i:
-                assert start1.add(a,b)==expect
+                result= start1.add(a,b)
             elif "div"==i:
-                assert start1.div(a,b)==expect
+                result= start1.div(a,b)
+            assert result==expect
 
     @pytest.mark.parametrize("a,b,expect",get_data()["add"])
     def test_add(self,a,b,expect,start):
