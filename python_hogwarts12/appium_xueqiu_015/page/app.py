@@ -8,6 +8,7 @@
 from appium import webdriver
 
 from python_hogwarts12.appium_xueqiu_015.page.basepage import BasePage
+from python_hogwarts12.appium_xueqiu_015.page.main import Main
 
 
 class App(BasePage):
@@ -18,10 +19,11 @@ class App(BasePage):
             desired_caps={}
             desired_caps['platformName']="Android"
             desired_caps['platformVersion']="6.0"
+            desired_caps['deviceName']="127.0.0.1:7555`"
             desired_caps['appPackage']=self._appPackage
             desired_caps['appActivity']=self._appActivity
             desired_caps['noReset']='true'
-            self.driver=webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
+            self._driver=webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
         else:
             self._driver.launch_app()
         self._driver.implicitly_wait(5)
@@ -31,4 +33,4 @@ class App(BasePage):
     def restart(self):
         pass
     def main(self):
-        pass
+        return Main(self._driver)
