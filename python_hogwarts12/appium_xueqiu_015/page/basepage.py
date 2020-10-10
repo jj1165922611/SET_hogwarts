@@ -14,7 +14,7 @@ class BasePage:
         (MobileBy.XPATH,'//*[@text="确定"]'),
         (MobileBy.XPATH,'//*[@text="下次再说"]')
     ]
-    _num=0
+    _error_num=0
     _max_num=5
     def __init__(self,driver: WebDriver=None):
         self._driver=driver
@@ -25,12 +25,12 @@ class BasePage:
                 ele=self._driver.find_element(*locator)
             else:
                 ele=self._driver.find_element(locator,value)
-            self._num=0
+            self._error_num=0
             return ele
         except Exception as e:
-            if self._num >self._max_num:
+            if self._error_num >=self._max_num:
                 raise e
-            self._num+=1
+            self._error_num+=1
             for black in self._black_list:
                 ele=self._driver.find_elements(*black)
                 if len(ele)>0:

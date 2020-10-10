@@ -5,14 +5,14 @@
 # @File       : app.py
 # @Software   : PyCharm
 # @Description: 打造自己的测试框架
-from appium.webdriver import webdriver
+from appium import webdriver
 
-from python_hogwarts12.appium_xueqiu.page.basepage import BasePage
+from python_hogwarts12.appium_xueqiu_015.page.basepage import BasePage
 
 
 class App(BasePage):
-    _appPackage=""
-    _appActivity=""
+    _appPackage="com.xueqiu.android"
+    _appActivity=".view.WelcomeActivityAlias"
     def start(self):
         if self._driver is None:
             desired_caps={}
@@ -25,6 +25,7 @@ class App(BasePage):
         else:
             self._driver.launch_app()
         self._driver.implicitly_wait(5)
+        return self
     def stop(self):
         pass
     def restart(self):
