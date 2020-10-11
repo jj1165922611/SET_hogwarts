@@ -12,25 +12,29 @@ from python_hogwarts12.appium_xueqiu_015.page.main import Main
 
 
 class App(BasePage):
-    _appPackage="com.xueqiu.android"
-    _appActivity=".view.WelcomeActivityAlias"
+    _appPackage = "com.xueqiu.android"
+    _appActivity = ".view.WelcomeActivityAlias"
+
     def start(self):
         if self._driver is None:
-            desired_caps={}
-            desired_caps['platformName']="Android"
-            desired_caps['platformVersion']="6.0"
-            desired_caps['deviceName']="127.0.0.1:7555`"
-            desired_caps['appPackage']=self._appPackage
-            desired_caps['appActivity']=self._appActivity
-            desired_caps['noReset']='true'
-            self._driver=webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
+            desired_caps = dict()
+            desired_caps['platformName'] = "Android"
+            desired_caps['platformVersion'] = "6.0"
+            desired_caps['deviceName'] = "emulator-5554"
+            desired_caps['appPackage'] = self._appPackage
+            desired_caps['appActivity'] = self._appActivity
+            desired_caps['noReset'] = 'true'
+            self._driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
         else:
             self._driver.launch_app()
-        self._driver.implicitly_wait(5)
+        self._driver.implicitly_wait(10)
         return self
+
     def stop(self):
         pass
+
     def restart(self):
         pass
+
     def main(self):
         return Main(self._driver)

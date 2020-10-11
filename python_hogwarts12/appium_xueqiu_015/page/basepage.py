@@ -5,54 +5,65 @@
 # @File       : basepage.py
 # @Software   : PyCharm
 # @Description: 打造自己的测试框架
-from appium.webdriver.common.mobileby import MobileBy
+import inspect
+import json
+
+import yaml
 from appium.webdriver.webdriver import WebDriver
+
+from python_hogwarts12.appium_xueqiu_015.page.wrapper import handle_black
 
 
 class BasePage:
-    _black_list=[
-        (MobileBy.XPATH,'//*[@text="确定"]'),
-        (MobileBy.XPATH,'//*[@text="下次再说"]')
-    ]
-    _error_num=0
-    _max_num=5
-    def __init__(self,driver: WebDriver=None):
-        self._driver=driver
+    _params = {}
+    _driver=None
 
-    def find(self,locator,value=None):
-        try:
-            if isinstance(locator,tuple):
-                ele=self._driver.find_element(*locator)
-            else:
-                ele=self._driver.find_element(locator,value)
-            self._error_num=0
-            return ele
-        except Exception as e:
-            if self._error_num >=self._max_num:
-                raise e
-            self._error_num+=1
-            for black in self._black_list:
-                ele=self._driver.find_elements(*black)
-                if len(ele)>0:
-                    ele[0].click()
-                return self.find(locator,value)
-            raise e
+    def __init__(self, driver: WebDriver = None):
+        self._driver = driver
+    def screenshot(self,name):
+        self._driver.save_screenshot(name)
+    @handle_black
+    def find(self, locator, value: str=None):
+        if isinstance(locator, tuple):
+            ele = self._driver.find_element(*locator)
+        else:
+            ele = self._driver.find_element(locator, value)
+        return ele
 
+    @handle_black
     def finds(self, locator, value=None):
-        try:
-            if isinstance(locator, tuple):
-                eles = self._driver.find_elements(*locator)
-            else:
-                eles = self._driver.find_elements(locator, value)
-            self._error_num = 0
-            return eles
-        except Exception as e:
-            if self._error_num >= self._max_num:
-                raise e
-            self._error_num += 1
-            for black in self._black_list:
-                eles = self._driver.find_elements(*black)
-                if len(eles) > 0:
-                    eles[0].click()
-                return self.finds(locator, value)
-            raise e
+        if isinstance(locator, tuple):
+            elements = self._driver.find_elements(*locator)
+        else:
+            elements = self._driver.find_elements(locator, value)
+        return elements
+
+    def steps(self, path):
+        with open(path, encoding="utf-8") as f:
+            name = inspect.stack()[1].function
+            steps = yaml.safe_load(f)[name]
+        raw = json.dumps(steps)
+        for key, value in self._params.items():
+            raw = raw.replace(f"{{{key}}}", value)
+        steps = json.loads(raw)
+        for step in steps:
+            ele = None
+            if "by" in step.keys():
+                ele = self.find(step["by"], step["locator"])
+            if "action" in step.keys():
+                action = step["action"]
+                if action == "click":
+                    ele.click()
+                if action == "text":
+                    return ele.txt
+                if action == "attribute":
+                    return ele.get_attribute(step["value"])
+                if action == "send":
+                    # content: str = step["value"]
+                    # for key, value in self._params.items():
+                    #     content = content.replace(f"{key}", value)
+                    # ele.send_keys(content)
+                    ele.send_keys(step["value"])
+                if action == "len > 0":
+                    elements=self.finds(step["by"],step["locator"])
+                    return len(elements)

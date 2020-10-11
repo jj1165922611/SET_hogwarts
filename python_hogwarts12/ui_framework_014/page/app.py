@@ -20,7 +20,7 @@ class App(BasePage):
             desired_caps=dict()
             desired_caps["platformName"]='Android'
             desired_caps["platformVersion"]='6.0'
-            desired_caps["deviceName"]='emulator 4444'
+            desired_caps["deviceName"]='emulator-5554'
             desired_caps["appPackage"]=self._appPackage
             desired_caps["appActivity"]=self._appActivity
             desired_caps['noReset']='true'

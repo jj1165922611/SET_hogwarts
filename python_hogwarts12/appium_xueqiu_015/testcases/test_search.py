@@ -10,5 +10,7 @@ from python_hogwarts12.appium_xueqiu_015.page.app import App
 
 class TestSearch:
     def test_search(self):
-        text=App().start().main().goto_market().goto_search().search().get_toast()
-        assert text=="已关注"
+        self.app=App()
+        name = "阿里巴巴"
+        len = self.app.start().main().goto_market().goto_search().search(name).is_choose(name)
+        assert len > 0

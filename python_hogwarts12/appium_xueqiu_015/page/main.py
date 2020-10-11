@@ -13,5 +13,5 @@ from python_hogwarts12.appium_xueqiu_015.page.market import Market
 
 class Main(BasePage):
     def goto_market(self):
-        self.find(MobileBy.XPATH,'//*[@resource-id="android:id/tabs"]//*[@text="行情"]').click()
+        self.steps("../page/main.yaml")
         return Market(self._driver)

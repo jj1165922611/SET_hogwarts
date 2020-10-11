@@ -11,11 +11,11 @@ from python_hogwarts12.appium_xueqiu_015.page.basepage import BasePage
 
 
 class Search(BasePage):
-    def search(self):
-        self.find(MobileBy.ID,"com.xueqiu.android:id/search_input_text").send_keys("alibaba")
-        self.find(MobileBy.XPATH,"//*[@text='BABA']").click()
-        self.find(MobileBy.XPATH,'//*[@resource-id="com.xueqiu.android:id/ll_stock_item_container"]//*[@text="阿里巴巴"]/../..//*[@text="加自选"]').click()
+    def search(self,name):
+        self._params["name"]=name
+        self.steps("../page/search.yaml")
         return self
-    def get_toast(self):
-        text=self.find(MobileBy.XPATH,"//*[@text='已关注']").text
-        return text
+    def is_choose(self,name):
+        self._params["name"] = name
+        return self.steps("../page/search.yaml")
+
