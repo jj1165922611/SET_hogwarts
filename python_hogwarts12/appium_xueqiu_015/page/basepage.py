@@ -22,6 +22,8 @@ class BasePage:
         self._driver = driver
     def screenshot(self,name):
         self._driver.save_screenshot(name)
+    def implicitly_wait(self,time=5):
+        self._driver.implicitly_wait(time)
     @handle_black
     def find(self, locator, value: str=None):
         if isinstance(locator, tuple):

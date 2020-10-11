@@ -31,6 +31,7 @@ def handle_black(method):
             _error_num = 0
             return ele
         except Exception as e:
+            instance.implicitly_wait(1)
             logging.error("element not found,handle black list")
             instance.screenshot("tmp.png")
             with open("tmp.png", "rb") as f:
@@ -43,6 +44,7 @@ def handle_black(method):
                 elements = instance.finds(*black)
                 if len(elements) > 0:
                     elements[0].click()
+                    instance.implicitly_wait(5)
                     return inner(*args, **kwargs)
             raise e
 
