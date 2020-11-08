@@ -6,7 +6,7 @@
 # @Software   : PyCharm
 # @Description: jenkins api接口
 
-from jenkinsapi.jenkins import Jenkins
+import requests
 
-jk=Jenkins("http://localhost:8888","JoeyJiang","1220jj",useCrumb=True)
-jk.build_job("iInterface_python")
+r=requests.get("http://JoeyJiang:1220jj@localhost:8888/job/iInterface_python/14/api/json")
+print(r.text)
